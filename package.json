@@ -62,7 +62,7 @@
     "publish-app": "tsc && npm run build && electron-builder -wlm --publish always",
     "publish-linux-app": "tsc && npm run build && electron-builder -l --publish always",
     "publish-win-app": "tsc && npm run build && electron-builder -w --publish always",
-    "publish-mac-universal-app": "tsc && npm run build && electron-builder --mac --universal",
+    "publish-mac-universal-app": "tsc && npm run build && electron-builder --mac --universal -c mac-dev.json",
     "publish-mac-app": "tsc && npm run build && electron-builder --mac --x64 --publish always",
     "publish-mac-arm-app": "tsc && npm run build && electron-builder --mac --arm64 --publish always",
     "dist:appstore": "CSC_KEY_PASSWORD=$PASSWORD CSC_LINK=$(openssl base64 -in $CERTIFICATE_PATH) npm run dist:mac-mas",
@@ -127,6 +127,7 @@
     },
     "mac": {
       "identity": null,
+      "notarize": false
       "minimumSystemVersion": "12.0.0",
       "category": "public.app-category.photography",
       "hardenedRuntime": true,
