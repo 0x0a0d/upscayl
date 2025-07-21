@@ -23,7 +23,7 @@ jobs:
           npm rebuild --platform=darwin --arch=arm64 sharp
           npm run publish-mac-universal-app
       - name: Upload Electron build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: upscayl-mac-build
           path: release/
