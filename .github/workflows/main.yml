@@ -9,7 +9,7 @@ on:
 # this is where the magic happens, each job happens in parallel btw
 jobs:
   macos:
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3.5.0
