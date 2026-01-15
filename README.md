@@ -13,6 +13,16 @@
    </div>
 </a>
 
+<a href="https://requestly.com/upscayl">
+   <div>
+   <img alt="Requestly sponsorship" width="500" src="https://github.com/user-attachments/assets/24670320-997d-4d62-9bca-955c59fe883d">
+   </div>
+   <b>Requestly - Free & Open-Source alternative to Postman</b>
+   <div>
+      <sup>All-in-one platform to Test, Mock and Intercept APIs.</sup>
+   </div>
+</a>
+
 #
 
 <a href="https://github.com/upscayl/upscayl/releases/latest">
